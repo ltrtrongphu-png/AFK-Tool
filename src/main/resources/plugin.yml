@@ -1,0 +1,17 @@
+name: AFKTool
+version: '1.0.0'
+main: com.example.afktool.AFKTool
+api-version: '1.21'
+author: YourName
+description: Bo 4 cong cu AFK (Cup/Riu/Xeng/Cuoc) dao/cay 3x3, thoi han 3 ngay
+
+commands:
+  afktool:
+    description: Lenh quan tri AFKTool
+    usage: /afktool <give|reload>
+    aliases: [aft]
+
+permissions:
+  afktool.admin:
+    description: Quyen dung lenh /afktool (give, reload)
+    default: op

@@ -1,0 +1,67 @@
+# =========================================
+#  AFKTool - Config
+# =========================================
+
+settings:
+  duration-days: 3      # Thoi han su dung cua ca 4 cong cu (tinh tu luc item duoc bo vao inventory)
+  radius: 1              # Ban kinh AOE quanh block goc. radius=1 -> vung 3x3
+
+  # Mau "Bach kim xanh" cho ten cong cu (gradient hex, ap dung sau khi chuyen ten sang small caps)
+  gradient:
+    start: "5CE1E6"       # xanh ngoc/aqua
+    end: "FFFFFF"          # trang bac (bach kim)
+
+tools:
+  cup:                     # Loai Cuoc/Pickaxe - dao 3x3 MOI loai da/quang, khong gioi han
+    material: NETHERITE_PICKAXE
+    display-name: "Cúp"
+    lore:
+      - "&7Đào 3x3 mọi loại đá/quặng"
+      - "&7Không giới hạn loại block"
+    unbreakable: true
+    enchantments:
+      efficiency: 5
+      unbreaking: 3
+      mending: 1
+
+  riu:                     # Loai Axe - dao 3x3 go/la, KHONG dao duoc neu vung co da
+    material: NETHERITE_AXE
+    display-name: "Rìu"
+    lore:
+      - "&7Đào 3x3 gỗ/lá cây"
+      - "&cSẽ KHÔNG đào nếu vùng 3x3 dính đá/quặng"
+      - "&7(chỉ Cúp mới đào được đá/quặng)"
+    unbreakable: true
+    enchantments:
+      efficiency: 5
+      unbreaking: 3
+      mending: 1
+
+  xeng:                    # Loai Shovel - dao 3x3 dat/cat/soi, KHONG dao duoc neu vung co da
+    material: NETHERITE_SHOVEL
+    display-name: "Xẻng"
+    lore:
+      - "&7Đào 3x3 đất/cát/sỏi"
+      - "&cSẽ KHÔNG đào nếu vùng 3x3 dính đá/quặng"
+      - "&7(chỉ Cúp mới đào được đá/quặng)"
+    unbreakable: true
+    enchantments:
+      efficiency: 5
+      unbreaking: 3
+      mending: 1
+
+  cuoc:                    # Loai Hoe - chuot phai de cay dat 3x3
+    material: NETHERITE_HOE
+    display-name: "Cuốc"
+    lore:
+      - "&7Chuột phải để cày đất 3x3"
+    unbreakable: true
+    enchantments:
+      efficiency: 5
+      unbreaking: 3
+      mending: 1
+
+messages:
+  given: "&aBạn đã nhận công cụ &e%tool% &a(hết hạn sau 3 ngày kể từ bây giờ)."
+  expired: "&cCông cụ &e%tool% &ccủa bạn đã hết hạn và bị thu hồi."
+  blocked-by-stone: "&cVùng 3x3 có chứa đá/quặng, chỉ Cúp mới đào được, đã hủy đào diện rộng."
