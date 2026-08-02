@@ -43,17 +43,6 @@ public class MiningListener implements Listener {
         BlockFace facing = player.getFacing();
         List<Block> targets = getAoeBlocks(origin, facing);
 
-        // Rieng Riu/Xeng: neu vung 3x3 co block thuoc loai chi Cup moi dao duoc (da/quang)
-        // thi HUY toan bo AOE (khong dao them block nao ca, chi block goc van vo binh thuong)
-        if (toolId.equals("riu") || toolId.equals("xeng")) {
-            for (Block b : targets) {
-                if (Tag.MINEABLE_PICKAXE.isTagged(b.getType())) {
-                    player.sendMessage(plugin.msg("blocked-by-stone"));
-                    return;
-                }
-            }
-        }
-
         Tag<Material> requiredTag = switch (toolId) {
             case "cup" -> Tag.MINEABLE_PICKAXE;
             case "riu" -> Tag.MINEABLE_AXE;
