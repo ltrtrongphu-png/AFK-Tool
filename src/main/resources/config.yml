@@ -14,7 +14,7 @@ settings:
 tools:
   cup:                     # Loai Cuoc/Pickaxe - dao 3x3 MOI loai da/quang, khong gioi han
     material: NETHERITE_PICKAXE
-    display-name: "Cúp"
+    display-name: "AFK Cúp"
     lore:
       - "&7Đào 3x3 mọi loại đá/quặng"
       - "&7Không giới hạn loại block"
@@ -26,7 +26,7 @@ tools:
 
   riu:                     # Loai Axe - dao 3x3 go/la, KHONG dao duoc neu vung co da
     material: NETHERITE_AXE
-    display-name: "Rìu"
+    display-name: "AFK Rìu"
     lore:
       - "&7Đào 3x3 gỗ/lá cây"
       - "&cSẽ KHÔNG đào nếu vùng 3x3 dính đá/quặng"
@@ -39,7 +39,7 @@ tools:
 
   xeng:                    # Loai Shovel - dao 3x3 dat/cat/soi, KHONG dao duoc neu vung co da
     material: NETHERITE_SHOVEL
-    display-name: "Xẻng"
+    display-name: "AFK Xẻng"
     lore:
       - "&7Đào 3x3 đất/cát/sỏi"
       - "&cSẽ KHÔNG đào nếu vùng 3x3 dính đá/quặng"
@@ -52,7 +52,7 @@ tools:
 
   cuoc:                    # Loai Hoe - chuot phai de cay dat 3x3
     material: NETHERITE_HOE
-    display-name: "Cuốc"
+    display-name: "AFK Cuốc"
     lore:
       - "&7Chuột phải để cày đất 3x3"
     unbreakable: true
@@ -64,4 +64,3 @@ tools:
 messages:
   given: "&aBạn đã nhận công cụ &e%tool% &a(hết hạn sau 3 ngày kể từ bây giờ)."
   expired: "&cCông cụ &e%tool% &ccủa bạn đã hết hạn và bị thu hồi."
-  blocked-by-stone: "&cVùng 3x3 có chứa đá/quặng, chỉ Cúp mới đào được, đã hủy đào diện rộng."
